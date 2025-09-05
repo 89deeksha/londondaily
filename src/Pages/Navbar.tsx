@@ -1,0 +1,36 @@
+import { MdOutlineArrowDropDown } from "react-icons/md";
+import { FaBars } from "react-icons/fa6";
+import { useState } from "react";
+
+const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="bg-[#fdc100] w-[1300px] h-[60px] px-4 flex items-center justify-between shadow-md">
+      {/* Left: Hamburger */}
+      <button className="bg-black text-white p-2 rounded">
+        <FaBars />
+      </button>
+
+      {/* Right: User */}
+      <div
+        onClick={() => setIsOpen(!isOpen)}
+        className="relative flex items-center gap-1 bg-black text-white px-3 py-1 rounded cursor-pointer"
+      >
+        <p className="font-medium">ADM1007</p>
+        <MdOutlineArrowDropDown className="h-7 w-7" />
+
+        {/* Dropdown Menu */}
+        {isOpen && (
+          <div className="absolute top-[110%] right-0 bg-white text-black shadow-lg rounded w-50 py-2 z-50">
+            <p className="px-4 py-2 hover:bg-gray-100 cursor-pointer border-b border-gray-300">Change Password</p>
+            
+            <p className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Logout</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
