@@ -14,8 +14,8 @@ const Home:React.FC=()=> {
 //     <div className="flex-1 p-4"><Outlet/></div>
 //   </div>
 // </div>
-<div className="flex gap-4  h-screen">
-    <div className="p-4"><Sidebar/></div>
+<div className="flex gap-4   h-screen">
+    <div className="p-4 hidden  md:block"><Sidebar/></div>
     <div><Navbar/></div>
 </div>
 

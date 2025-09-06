@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-[#fdc100] w-[1300px] h-[60px] px-4 flex items-center justify-between shadow-md">
+    <div className="bg-[#fdc100]  w-[1300px] h-[60px] px-4 py-6 flex items-center sm:h-[40px] justify-between shadow-md">
       {/* Left: Hamburger */}
       <button className="bg-black text-white p-2 rounded">
         <FaBars />
