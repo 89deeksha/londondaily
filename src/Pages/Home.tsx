@@ -1,25 +1,27 @@
+import { Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
 
-import Navbar from "./Navbar"
-import Sidebar from "./Sidebar"
-
-
-const Home:React.FC=()=> {
+const Home: React.FC = () => {
   return (
-//     <div className="flex gap-4  h-screen">
-//   <div className="p-5">
-//     <Sidebar />
-//   </div>
-//   <div className="flex ">
-//     <Navbar/>
-//     <div className="flex-1 p-4"><Outlet/></div>
-//   </div>
-// </div>
-<div className="flex gap-4   h-screen">
-    <div className="p-4 hidden  md:block"><Sidebar/></div>
-    <div><Navbar/></div>
-</div>
+    <div className="flex h-screen">
+      {/* Sidebar */}
+      <div className="w-64 ">
+        <Sidebar />
+      </div>
 
-  )
-}
+      {/* Right side (Navbar + Content) */}
+      <div className="flex-1 flex flex-col">
+        {/* Navbar stays full width */}
+        <Navbar />
 
-export default Home
+        {/* Page Content */}
+        <div className="flex-1 p-4 overflow-auto">
+          <Outlet />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
