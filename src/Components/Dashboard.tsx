@@ -62,7 +62,7 @@ const Dashboard: React.FC = () => {
      {
         name:"My Account",
         Amount:"#dc3444",
-        color:"#08225e"
+        color:"#dc3444"
      },
      {
         name:"My Account",
@@ -114,24 +114,25 @@ const Dashboard: React.FC = () => {
         </div>
       </div>
       {/* icons */}
-      <div className="flex justify-center  gap-50 mt-10 flex-wrap">
+      <div className="flex justify-center gap-40  mt-10 flex-wrap">
   {items.map((item, index) => (
     <div
       key={index}
-      className="flex flex-col items-start cursor-pointer hover:scale-105 transition-transform"
+      className="flex flex-col items-center cursor-pointer hover:scale-105 transition-transform"
       onClick={() => navigate(item.link)} // 👈 makes them clickable
     >
       <div className="flex items-center justify-center bg-blue-500 rounded-full w-30 h-30 text-white shadow-md">
         {item.icon}
       </div>
-      <p className="mt-3 text-gray-600 font-medium">{item.label}</p>
+      <p className="mt-3 text-gray-600 justify-center font-medium">{item.label}</p>
     </div>
   ))}
-  <div className="grid w-full h-[20px] grid-cols-3 gap-6">
+  </div>
+  <div className="grid w-full mt-2  grid-cols-3 gap-4">
   {Amount.map((acc, index) => (
     <div
       key={index}
-      className="flex items-center gap-2 p-2 rounded-t-sm rounded-b-none shadow-md text-white h-[60px] cursor-pointer hover:scale-105 transition-transform"
+      className="flex items-center gap-2 p-2 rounded-t-sm rounded-b-none shadow-md text-white  cursor-pointer hover:scale-105 transition-transform"
       style={{ backgroundColor: acc.color }}
     >
       <p >{acc.name}</p>
@@ -141,7 +142,7 @@ const Dashboard: React.FC = () => {
 </div>
 
 
-</div>
+
       
     </div>
   );
