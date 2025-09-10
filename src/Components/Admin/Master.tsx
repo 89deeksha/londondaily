@@ -2,21 +2,21 @@ import React, { useState } from "react";
 
 const Master: React.FC = () => {
     const [search, setSearch] = useState("");
-    const data = [
-        {
-          id: 1,
-          user: "U001",
-          admin: "Admin1",
-          name: "John Doe",
-          password: "******",
-          shareAdmin: "20%",
-          shareSubadmin: "10%",
-          balanceCurrent: "5000",
-          commissionSess: "2%",
-          commissionMat: "1%",
-          commissionMatka: "3%",
-        },
-      ];
+    // const data = [
+    //     {
+    //       id: 1,
+    //       user: "U001",
+    //       admin: "Admin1",
+    //       name: "John Doe",
+    //       password: "******",
+    //       shareAdmin: "20%",
+    //       shareSubadmin: "10%",
+    //       balanceCurrent: "5000",
+    //       commissionSess: "2%",
+    //       commissionMat: "1%",
+    //       commissionMatka: "3%",
+    //     },
+    //   ];
   return (
     <div className="mt-12">
       {/* Header Row */}
