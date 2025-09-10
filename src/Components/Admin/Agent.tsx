@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const MiniAdmin: React.FC = () => {
+const Agent: React.FC = () => {
     const [search, setSearch] = useState("");
     const data = [
         {
@@ -22,7 +22,7 @@ const MiniAdmin: React.FC = () => {
       {/* Header Row */}
       <div className="flex border p-1 border-gray-300 bg-[#f7f7f7] w-full justify-between items-center mb-4">
         {/* Title */}
-        <h2 className="text-xl">Subadmin</h2>
+        <h2 className="text-xl">Agent</h2>
 
         {/* Buttons */}
         <div className="flex gap-2">
@@ -86,4 +86,4 @@ const MiniAdmin: React.FC = () => {
   );
 };
 
-export default MiniAdmin;
+export default Agent;

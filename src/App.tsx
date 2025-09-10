@@ -6,6 +6,9 @@ import Dashboard from "./Components/Dashboard";
 import MiniAdmin from "./Components/Admin/MiniAdmin";
 import Master from "./Components/Admin/Master";
 import SuperAgentMaster from "./Components/Admin/SuperAgentMaster";
+import Agent from "./Components/Admin/Agent";
+import Client from "./Components/Admin/Client";
+import Sportsdetails from "./Components/Sportsdetails";
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
           <Route path="subadmin-1" element={<MiniAdmin />} />
           <Route path="master" element={<Master/>} />
           <Route path="list-superagent/1" element={<SuperAgentMaster/>} />
+          <Route path="list-agent/1" element={<Agent/>} />
+          <Route path="list-client/1" element={<Client/>} />
+          <Route path="app/sportsBetting" element={<Sportsdetails/>} />
         </Route>
       </Route>
     </Routes>
