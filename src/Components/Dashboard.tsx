@@ -75,7 +75,7 @@ const Dashboard: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="space-y-6">
+    <div className="p-4 space-y-6">
       {/* Game Cards */}
       <div className="flex flex-wrap gap-2">
         {data.map((para, index) => (

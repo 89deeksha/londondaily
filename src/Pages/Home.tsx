@@ -1,7 +1,9 @@
 
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
-import Dashboard from "../Components/Dashboard";
+
+import { Outlet } from "react-router-dom";
+
 
 const Home: React.FC = () => {
   return (
@@ -17,8 +19,9 @@ const Home: React.FC = () => {
         <Navbar />
 
         {/* Page Content */}
-        <div className="flex-1 p-4 overflow-auto">
-          <Dashboard/>
+        <div className="flex-1  overflow-auto">
+         <Outlet/>
+          
         </div>
       </div>
     </div>
