@@ -33,14 +33,14 @@ const Sidebar: React.FC = () => {
           name: "Ledger",
           icon: <MdFormatListBulleted />,
           Children: [
-            { name: "My Ledger", icon: <FaUser />, path: "" },
-            { name: "All Subadmin Ledger", icon: <FaUser />, path: "" },
-            { name: "Total Profit/Loss", icon: <FaUser />, path: "" },
-            { name: "Subadmin Ledger", icon: <FaUser />, path: "" },
+            { name: "My Ledger", icon: <FaUser />, path: "/home/admin/app/client/my-ledger/admin" },
+            { name: "All Subadmin Ledger", icon: <FaUser />, path: "/home/admin/app/settlement-admin/1" },
+            { name: "Total Profit/Loss", icon: <FaUser />, path: "/home/admin/app/ledger/subadmin" },
+            { name: "Subadmin Ledger", icon: <FaUser />, path: "/home/admin/app/client/ledger-subadmin" },
             
           ],
         },
-        { name: "AllSubadmin Report", icon: <RiComputerLine />, path: "/app/report" },
+        { name: "AllSubadmin Report", icon: <RiComputerLine />, path: "/home/admin/app/finalreport/subadmin" },
       ],
     },
   ];

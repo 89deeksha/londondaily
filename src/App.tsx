@@ -9,6 +9,11 @@ import SuperAgentMaster from "./Components/Admin/SuperAgentMaster";
 import Agent from "./Components/Admin/Agent";
 import Client from "./Components/Admin/Client";
 import Sportsdetails from "./Components/Sportsdetails";
+import MyLedger from "./Components/Ledger/MyLedger";
+import Subadmin from "./Components/Ledger/Subadmin";
+import Totalprofit from "./Components/Ledger/Totalprofit";
+import Subad from "./Components/Ledger/Subad";
+import Allsubadmin from "./Components/Allsubadmin";
 
 function App() {
   return (
@@ -31,6 +36,15 @@ function App() {
           <Route path="list-agent/1" element={<Agent/>} />
           <Route path="list-client/1" element={<Client/>} />
           <Route path="app/sportsBetting" element={<Sportsdetails/>} />
+          <Route path="app/client/my-ledger/admin" element={<MyLedger/>} />
+          <Route path="app/settlement-admin/1" element={<Subadmin/>} />
+          <Route path="app/ledger/subadmin" element={<Totalprofit/>} />
+          <Route path="app/client/ledger-subadmin" element={<Subad/>} />
+          <Route path="app/finalreport/subadmin" element={<Allsubadmin/>} />
+
+
+          
+
         </Route>
       </Route>
     </Routes>
