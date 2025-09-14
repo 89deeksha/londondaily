@@ -24,6 +24,7 @@ const MyLedger: React.FC = () => {
         { date: "2025-09-12", credit: 1000, debit: 0, balance: 1300, remark: "Bet Win" },
       ];
       setData(dummyData);
+      setError("failed to fetch data")
       setLoading(false);
     }, 1000);
   }, []);
