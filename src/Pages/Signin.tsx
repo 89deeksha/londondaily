@@ -23,7 +23,7 @@ const Signin: React.FC = () => {
   }
 
   const handleLogin = () => {
-    if (user === "deek123" && password === "12345" && captchaInput === captcha) {
+    if (user === "deek123" && password === "123456" && captchaInput === captcha) {
       alert("Login Successful ✅");
       navigate("/home");
       setError("");

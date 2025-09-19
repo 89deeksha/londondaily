@@ -12,7 +12,7 @@ import { FaUser, FaFutbol, FaBook, FaTag } from "react-icons/fa";
 
 const Dashboard: React.FC = () => {
   const data = [
-    { image: image1, card: "Teenpatti T20", link: "/teenpatti-t20" },
+    { image: image1, card: "Teenpatti T20", link: "Teenpattit20" },
     { image: image2, card: "Dragon Tiger2", link: "/dragon-tiger2" },
     { image: image3, card: "Lucky 7B", link: "/lucky7b" },
     { image: image4, card: "TeenPatti Onedat", link: "/teenpatti-onedat" },
