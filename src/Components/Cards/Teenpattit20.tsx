@@ -29,11 +29,11 @@ const Teenpattit20: React.FC = () => {
 
           <ReactPlayer
   url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-  controls={true}
+  controls
   playing={false}
-  muted={true}
-  width={"100%"}
-  height={400} 
+  muted
+  width="100%"
+  height="400px" // must be a string
 />
 
           <div className="bg-[#ffc100] flex justify-between p-2 font-medium w-full">
