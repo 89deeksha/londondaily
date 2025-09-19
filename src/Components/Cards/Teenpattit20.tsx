@@ -114,26 +114,54 @@ const Teenpattit20: React.FC = () => {
         
         
       </div>
-      <table className="mt-4 mx-47 border-collapse border text-start h-[30px] w-[450px]">
-            {tabledata1.map((data1, index) => (
-              <React.Fragment key={index}>
-                <thead>
-                  <tr>
-                    <th className="border  text-black border-gray-400 px-20 py-1">Match</th>
-                    <th className="border  text-black border-gray-400 px-1 py-1"></th>
-                   
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td className="border bg-white border-gray-400 px-3 py-3">Loading Session...</td>
-                    <td className="border bg-[#ee839c] text-sm border-gray-400 px-3 py-3"><span className='border'>SUSPENDED</span></td>
-                    
-                  </tr>
-                </tbody>
-              </React.Fragment>
-            ))}
-          </table>
+      <table className="mx-47 mt-4 border-collapse border  table-auto ">
+  <thead>
+    {/* Top header spanning all columns */}
+    <tr>
+      <th
+        className="border text-black border-gray-400 px-2 py-2 text-center font-bold"
+        colSpan={5} // span across 7 columns
+      >
+        Match
+      </th>
+      <th
+        className="border text-black border-gray-400 px-2 py-2 text-center font-bold"
+        colSpan={5} // span across 7 columns
+      >
+        
+      </th>
+    </tr>
+
+    {/* Column headers */}
+    <tr className="bg-gray-100">
+      <th className="border text-black border-gray-400 px-2 py-2 text-center font-bold">
+        Client
+      </th>
+      <th className="border text-black border-gray-400 px-2 py-2 text-center font-bold">
+        Amount
+      </th>
+      <th className="border text-black border-gray-400 px-2 py-2 text-center font-bold">
+        Rate
+      </th>
+      <th className="border text-black border-gray-400 px-2 py-2 text-center font-bold">
+        Player
+      </th>
+      <th className="border text-black border-gray-400 px-2 py-2 text-center font-bold">
+        Result
+      </th>
+      <th className="border text-black border-gray-400 px-2 py-2 text-center font-bold">
+        PnL
+      </th>
+      <th className="border text-black border-gray-400 px-2 py-2 text-center font-bold">
+        Date
+      </th>
+      
+    </tr>
+  </thead>
+
+  
+</table>
+
       
     </div>
   )
