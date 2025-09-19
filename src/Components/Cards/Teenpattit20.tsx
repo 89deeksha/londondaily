@@ -33,7 +33,7 @@ const Teenpattit20: React.FC = () => {
   playing={false}
   muted={true}
   width={"100%"}
-  height={400} // number is safer
+  height={400} 
 />
 
           <div className="bg-[#ffc100] flex justify-between p-2 font-medium w-full">
