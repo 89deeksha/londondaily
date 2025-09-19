@@ -28,13 +28,13 @@ const Teenpattit20: React.FC = () => {
           </p>
 
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-            controls
-            playing={false}
-            muted
-            width="100%"
-            height="400px"
-          />
+  url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+  controls={true}
+  playing={false}
+  muted={true}
+  width={"100%"}
+  height={400} // number is safer
+/>
 
           <div className="bg-[#ffc100] flex justify-between p-2 font-medium w-full">
             <p>Last Result</p>
