@@ -2,6 +2,18 @@ import React from "react";
 import ReactPlayer from "react-player";
 import { RiComputerLine } from "react-icons/ri";
 
+// Extend ReactPlayer props for TypeScript
+declare module "react-player" {
+  interface ReactPlayerProps {
+    url?: string;
+    playing?: boolean;
+    controls?: boolean;
+    muted?: boolean;
+    width?: string | number;
+    height?: string | number;
+  }
+}
+
 const Teenpattit20: React.FC = () => {
   const tabledata = [
     { Team: "Player A (0)", Back: "1.95", Lay: "0.00" },
@@ -27,12 +39,11 @@ const Teenpattit20: React.FC = () => {
             </span>
           </p>
 
-          {/* ✅ Correct ReactPlayer usage */}
           <ReactPlayer
             url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-            controls={true}
+            controls
             playing={false}
-            muted={true}
+            muted
             width="100%"
             height="400px"
           />
