@@ -1,5 +1,5 @@
 import React from "react";
-import ReactPlayer, { ReactPlayerProps } from "react-player";
+import ReactPlayer from "react-player";
 import { RiComputerLine } from "react-icons/ri";
 
 const Teenpattit20: React.FC = () => {
@@ -9,16 +9,6 @@ const Teenpattit20: React.FC = () => {
   ];
 
   const tabledata1 = [{ Session: "Session", Not: "Not", Yes: "Yes" }];
-
-  // Fix: define player props with ReactPlayerProps type
-  const playerProps: ReactPlayerProps = {
-    url: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
-    controls: true,
-    playing: false,
-    muted: true,
-    width: "100%",
-    height: "400px",
-  };
 
   return (
     <div>
@@ -37,8 +27,15 @@ const Teenpattit20: React.FC = () => {
             </span>
           </p>
 
-          {/* ✅ Fixed ReactPlayer */}
-          <ReactPlayer {...playerProps} />
+          {/* ✅ Correct ReactPlayer usage */}
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+            controls={true}
+            playing={false}
+            muted={true}
+            width="100%"
+            height="400px"
+          />
 
           <div className="bg-[#ffc100] flex justify-between p-2 font-medium w-full">
             <p>Last Result</p>
