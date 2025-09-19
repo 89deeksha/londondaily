@@ -3,7 +3,7 @@ import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
 import Password from "../Components/Password";
 import { FaUser } from "react-icons/fa";
-import Signin from "./Signin";
+
 import { useNavigate } from "react-router-dom";
 
 const Navbar: React.FC = () => {

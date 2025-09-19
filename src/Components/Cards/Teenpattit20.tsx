@@ -1,4 +1,4 @@
-
+import ReactPlayer from 'react-player'
 import React from "react";
 
 import { RiComputerLine } from "react-icons/ri";
