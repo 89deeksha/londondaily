@@ -13,6 +13,7 @@ declare module "react-player" {
     height?: string | number;
   }
 }
+const tabledata2=["Subadmin", "Match(+/-)","Session(+/-)","Total","M.Comm","S.Comm","T.Comm","G.Total","Subadmin Share","Balance"]
 
 const Teenpattit20: React.FC = () => {
   const tabledata = [
@@ -182,6 +183,18 @@ const Teenpattit20: React.FC = () => {
           </tr>
         </thead>
       </table>
+      <div className="border border-gray-300 rounded-sm h-[200px] mt-4 w-[850px] mx-47">
+        <div className="flex justify-end items-center m-4 gap-2">
+        <label className="text-sm">Search: </label>
+        <input type="text" className="border rounded-sm py-1 px-4"  />
+        </div>
+        <table className="w-full border-collapse border mt-3">
+          {tabledata2.map((data2, index)=>(
+ <th key={index} className="text-sm border p-2 bg-[#ffc100] text-white">{data2}</th>
+          ))}
+         
+        </table>
+      </div>
     </div>
   );
 };
