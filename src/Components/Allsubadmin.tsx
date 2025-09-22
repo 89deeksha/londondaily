@@ -65,8 +65,8 @@ const SubadminReport: React.FC = () => {
       </div>
 
       {/* Report Table */}
-      <div className="overflow-x-auto">
-        <table className="w-full border border-gray-300 text-sm">
+      <div className=" overflow-x-auto">
+        <table className=" w-full border border-gray-300 text-sm">
           <thead className="bg-yellow-400 text-black">
             <tr>
               <th className="border border-gray-300 p-2">Subadmin</th>

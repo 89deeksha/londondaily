@@ -20,7 +20,7 @@ const MiniAdmin: React.FC = () => {
   return (
     <div className="mt-12">
       {/* Header Row */}
-      <div className="flex border p-1 border-gray-300 bg-[#f7f7f7] w-full justify-between items-center mb-4">
+      <div className="flex border p-1  border-gray-300 overflow-x-auto bg-[#f7f7f7] w-full justify-between items-center mb-4">
         {/* Title */}
         <h2 className="text-xl">Subadmin</h2>
 

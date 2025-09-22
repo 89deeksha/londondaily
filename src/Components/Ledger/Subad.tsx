@@ -16,8 +16,8 @@ const Subad: React.FC = () => {
       </header>
 
       {/* Input + Dropdown */}
-      <div className="p-6 relative">
-        <div className="relative">
+      <div className="p-6">
+        <div className="relative w-full">
           <input
             type="text"
             value={selected}
@@ -34,6 +34,24 @@ const Subad: React.FC = () => {
             size={22}
             onClick={() => setIsOpen(!isOpen)}
           />
+
+          {/* Dropdown menu */}
+          {isOpen && (
+            <ul className="absolute w-full mt-1 border rounded-md bg-white shadow-lg z-10">
+              {options.map((option, index) => (
+                <li
+                  key={index}
+                  className="p-2 hover:bg-gray-100 cursor-pointer"
+                  onClick={() => {
+                    setSelected(option);
+                    setIsOpen(false);
+                  }}
+                >
+                  {option}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
 
         {/* Settlement Button */}
@@ -43,36 +61,24 @@ const Subad: React.FC = () => {
             <span>Settlement</span>
           </button>
         </div>
-        <table className="w-full mt-5 border  border-gray-300">
-  <thead >
-    <tr className="bg-gray-200 ">
-      <th className="border border-gray-300 p-2 text-left">Date</th>
-      <th className="border border-gray-300 p-2 text-left">Debit</th>
-      <th className="border border-gray-300 p-2 text-left">Credit</th>
-      <th className="border border-gray-300 p-2 text-left">Balance</th>
-      <th className="border border-gray-300 p-2 text-left">Remark</th>
-    </tr>
-    <tr ><td className="p-3">no result</td></tr>
-  </thead>
-  </table>
 
-        {/* Dropdown menu */}
-        {isOpen && (
-          <ul className="absolute left-6 right-6 mt-1 border rounded-md bg-white shadow-lg z-10">
-            {options.map((option, index) => (
-              <li
-                key={index}
-                className="p-2 hover:bg-gray-100 cursor-pointer"
-                onClick={() => {
-                  setSelected(option);
-                  setIsOpen(false);
-                }}
-              >
-                {option}
-              </li>
-            ))}
-          </ul>
-        )}
+        {/* Table */}
+        <table className="w-full mt-5 border border-gray-300">
+          <thead>
+            <tr className="bg-gray-200">
+              <th className="border border-gray-300 p-2 text-left">Date</th>
+              <th className="border border-gray-300 p-2 text-left">Debit</th>
+              <th className="border border-gray-300 p-2 text-left">Credit</th>
+              <th className="border border-gray-300 p-2 text-left">Balance</th>
+              <th className="border border-gray-300 p-2 text-left">Remark</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td className="p-3" colSpan={5}>no result</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );

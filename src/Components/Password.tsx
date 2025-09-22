@@ -35,7 +35,7 @@ const Password: React.FC<PasswordProps> = ({ onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 flex justify-center items-start bg-opacity-50 z-[9999]">
+    <div className="fixed inset-0 bg-black/30 flex justify-center items-start z-[9999]">
       {/* Modal Box with full border */}
       <div className="bg-white rounded-lg shadow-lg w-[450px] relative mt-20 border border-gray-400">
         

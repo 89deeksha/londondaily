@@ -1,16 +1,16 @@
-import image1 from "../Images/card.png";
-import image2 from "../Images/card1.png";
-import image3 from "../Images/card2.png";
-import image4 from "../Images/card3.png";
-import image5 from "../Images/card4.png";
-import image6 from "../Images/card5.png";
-import image7 from "../Images/card7.png";
-import image8 from "../Images/card8.png";
-import matka from "../Images/matka.png";
+import image1 from "../../Images/card.png"
+import image2 from "../../Images/card1.png";
+import image3 from "../../Images/card2.png";
+import image4 from "../../Images/card3.png";
+import image5 from "../../Images/card4.png";
+import image6 from "../../Images/card5.png";
+import image7 from "../../Images/card7.png";
+import image8 from "../../Images/card8.png";
+import matka from "../../Images/matka.png";
 import { useNavigate } from "react-router-dom";
 import { FaUser, FaFutbol, FaBook, FaTag } from "react-icons/fa";
 
-const Dashboard: React.FC = () => {
+const Lucky7B: React.FC = () => {
   const data = [
     { image: image1, card: "Teenpatti T20", link: "/home/Teenpattit20" },
     { image: image2, card: "Dragon Tiger2", link: "/home/DragonTiger2" },
@@ -148,4 +148,4 @@ const Dashboard: React.FC = () => {
   );
 };
 
-export default Dashboard;
+export default Lucky7B;

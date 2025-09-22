@@ -16,6 +16,8 @@ import Subad from "./Components/Ledger/Subad";
 import Allsubadmin from "./Components/Allsubadmin";
 import Password from "./Components/Password";
 import Teenpattit20 from "./Components/Cards/Teenpattit20";
+import DragonTiger2 from "./Components/Cards/DragonTiger2";
+import Lucky7B from "./Components/Cards/Lucky7B";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
         {/* Other children */}
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="teenpattit20" element={<Teenpattit20 />} />
+        <Route path="DragonTiger2" element={<DragonTiger2 />} />
+        <Route path="Lucky7B" element={<Lucky7B />} />
 
         {/* Admin children */}
         <Route path="admin">

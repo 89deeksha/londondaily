@@ -24,13 +24,13 @@ const MyLedger: React.FC = () => {
         { date: "2025-09-12", credit: 1000, debit: 0, balance: 1300, remark: "Bet Win" },
       ];
       setData(dummyData);
-      setError("failed to fetch data")
+      setError(null)
       setLoading(false);
     }, 1000);
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen"> {/* 👈 full height */}
+    <div className="w-full flex flex-col min-h-screen overflow-x-auto sm:w-[900px] md:w-full"> {/* 👈 full height */}
       {/* Header */}
       <header className="bg-[#6d757e] text-white p-2 text-2xl font-medium text-center">
         My Ledger

@@ -12,14 +12,14 @@ const Navbar: React.FC = () => {
   const navigate=useNavigate()
 
   return (
-    <div className="bg-[#fdc100] w-full h-[60px] px-4 flex items-center sm:h-[40px] justify-between shadow-md">
+    <div className="bg-[#fdc100] w-full h-[60px]   px-4 flex items-center justify-between shadow-md flex-shrink-0">
       {/* Left: Hamburger */}
-      <button className="bg-black text-white p-2 rounded">
+      <button className="bg-black text-white p-2 rounded ">
         <FaBars />
       </button>
 
       {/* Right: User */}
-      <div className="relative flex items-center gap-1 bg-black text-white px-3 py-1 rounded cursor-pointer">
+      <div className="relative flex items-center gap-1 bg-black text-white px-3 py-1 rounded cursor-pointer ">
         <p className="font-medium">ADM1007</p>
         <MdOutlineArrowDropDown
           className="h-7 w-7"
